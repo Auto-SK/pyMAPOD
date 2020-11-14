@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pandas
+scipy
+pyDOE
+sklearn
+mlab
+xlrd
