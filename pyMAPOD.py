@@ -50,9 +50,9 @@ calc_sobol_meta = False
 
 if input_type == 'dat':
     # the name of file containing database
-    fileName = 'test_MAPOD.xlsx'
+    fileName = 'TMR.xlsx'
     # the name of sheet of interest
-    sheetName = 'F_theta_x'
+    sheetName = 'Sheet1'
     # extract and view data
     data = func_data.read_view_data(fileName, sheetName, view_data=True)
 
@@ -261,7 +261,7 @@ if val_metamodel == False and calc_sobol == False:
     ahat_vs_a.view_reg(data, beta0, beta1, tau)
 
     # user-defined detection threshold, units vary due to the type of model response
-    threshold = 6.5
+    threshold = 0.2
     # pod generation
     mu, sigma, pcov = pod_gen.pod_cal(data, beta0, beta1, tau, threshold)
     # key parameters

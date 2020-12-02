@@ -152,4 +152,6 @@ Desktop.ini
 .vscode/
 
 # User defined
-
+*.xlsx
+*.docx
+!test_MAPOD.xlsx
